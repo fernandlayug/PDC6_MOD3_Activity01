@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PDC6_MOD3_Activity01.View.PageView">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Subject Code"/>
+            <Entry Text="{Binding StudentCodeEntry}"/>
+
+            <Label Text="Subject Title"/>
+            <Entry Text="{Binding StudentTitleEntry}"/>
+
+            <Label Text="Subject Unit"/>
+            <Entry Text="{Binding StudentViewModel.Unit}"/>
+
+
+            <Button Command="{Binding SubmitEntry}" Text="Submit"/>
+            <Label Text="{Binding StudentCodeDisplay}"/>
+            <Label Text="{Binding StudentTitleDisplay}"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
